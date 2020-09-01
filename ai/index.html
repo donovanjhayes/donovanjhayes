@@ -82,28 +82,6 @@
             <h3>Hayes's Google Drive (must be signed in with PhilaSD account to see files)</h3>
         </div>
       </div>
-      <div id="my-signin2"></div>
-      <script>
-        function onSuccess(googleUser) {
-          console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
-        }
-        function onFailure(error) {
-          console.log(error);
-        }
-        function renderButton() {
-          gapi.signin2.render('my-signin2', {
-            'scope': 'profile email',
-            'width': 240,
-            'height': 50,
-            'longtitle': true,
-            'theme': 'dark',
-            'onsuccess': onSuccess,
-            'onfailure': onFailure
-          });
-        }
-      </script>
-    
-      <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
         <div class="row align-items-center justify-content-center">
                 <!-- can change from #list to #grid for style-->
                 <iframe src="https://drive.google.com/drive/u/0/folders/1CYnQPv601lLOdVrcoOjP2Jq8bixcnbow#grid" width = 80% height= 310px frameborder="0">
